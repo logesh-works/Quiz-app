@@ -17,7 +17,8 @@
     <h4 style="text-align: right;" id="time-left-label"></h4>
 
     {% for q in questions %}
-      <h3 class="text-info">{{ forloop.counter }}. {{ q.question }}</h3>
+      <h3 class="text-info">{{ forloop.counter }}. <pre>{{ q.question }}</pre>
+      </h3>
       <h4 style="text-align: right;">[Marks {{ q.marks }}]</h4>
       <input type="hidden" name="csrfmiddlewaretoken" value="C24rUotmdHawVQJL3KrqiWxvti8UffOFYUc8TRbZtLt36AVLdP3jbkzUVe3beRAa">
 
